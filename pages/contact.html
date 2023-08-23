@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Contactați The Garden</title>
+</head>
+<body>
+    <header class="contact">
+        <nav id="navbar">
+			<div class="logo"><span>The Garden</span></div>
+			<ul>
+				<li><a href="../index.html">Acasa</a></li>
+				<li><a href="despre.html">Despre noi</a></li>
+				<li><a href="../images/meniu-mic-dejun.pdf" target="_blank" title="meniu">Meniu</a></li>
+				<li><a href="comenzi.html">Comenzi</a></li>
+				<li><a href="contact.html">Contact</a></li>
+
+			</ul>
+		</nav>
+		
+		<div id="mobile">
+			<div><span>The Garden</span></div>
+			<ul>
+				<li><a href="../index.html">Acasa</a></li>
+				<li><a href="pages/despre.html">Despre noi</a></li>
+				<li><a href="../images/meniu-mic-dejun.pdf" target="_blank" title="meniu">Meniu</a></li>
+				<li><a href="comenzi.html">Comenzi</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+        <div>
+            <section id="home2">
+                
+                <form action="submit.php" method="post">
+<br>
+                    <h2>Formular contact</h2><br>
+                    <label for="prenume">Prenume:</label><br>
+                    <input type="text" id="prenume" name="prenume" placeholder="Prenumele tău" required><br>
+                  
+                    <label for="nume">Nume:</label><br>
+                    <input type="text" id="nume" name="nume" placeholder="Numele tău" required><br>
+                  
+                    <label for="email">Email</label><br>
+                    <input type="text" id="email" name="email" placeholder="example@email.com" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" required><br>
+                    
+                    <label for="mobile">Telefon</label><br>
+                    <input type="mobile" id="telefon" name="mobile" placeholder="07xxxxxxxx" pattern="[0-9]{10}"  required><br><br>
+                  
+                    <label for="calitatea">Ne contactați în legătură cu</label><br>
+                    <select name="calitatea" >
+                      <option value="comanda">o comandă</option>
+                      <option value="rezervare">o rezervare</option>
+                      <option value="plangere">o plângere</option>
+                      <option value="alta">alt motiv</option>
+                  </select><br><br>   
+                  
+                    <label for="mesaj">Mesajul tau</label><br>
+                    
+                    <textarea id="mesaj" name="mesaj" rows="10" cols="50" placeholder="Mesajul tau aici...."></textarea>
+                    <br>
+                                      
+                    <br><br>
+                  
+                    <input class="button" type="submit" value="Send">
+                    <br><br>
+                  </form> 
+            </section>
+        </div>
+    </header>
+</body>
+</html>
